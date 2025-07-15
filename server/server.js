@@ -8,7 +8,7 @@ const path = require("path");
 // Load environment variables from .env
 dotenv.config();
 
-const bugRoutes = require("./routes/bugRoutes");
+const bugRoutes = require('./routes/bugRoutes');
 
 const app = express();
 
@@ -17,7 +17,7 @@ app.use(cors());
 app.use(express.json());
 
 // Routes
-app.use("/api/bugs", bugRoutes);
+app.use('/api/bugs', bugRoutes);
 
 // Serve frontend (React) in production
 if (process.env.NODE_ENV === "production") {
